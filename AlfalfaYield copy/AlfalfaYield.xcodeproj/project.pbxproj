@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F71D36922CA3E10100CA9438 /* trainmodelview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71D36912CA3E10100CA9438 /* trainmodelview.swift */; };
+		F71D36942CA3E13F00CA9438 /* viewresultsview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71D36932CA3E13F00CA9438 /* viewresultsview.swift */; };
+		F71D36962CA3EA3600CA9438 /* pklfileuploadscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71D36952CA3EA3600CA9438 /* pklfileuploadscreen.swift */; };
+		F72F4F512C9D28CB006B7525 /* customFileUploadViewnew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F4F502C9D28CB006B7525 /* customFileUploadViewnew.swift */; };
+		F72F4F532C9D29DD006B7525 /* customFilePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F4F522C9D29DD006B7525 /* customFilePickerView.swift */; };
+		F7A83BBB2C9D56AF0023443E /* swiftUIview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A83BBA2C9D56AF0023443E /* swiftUIview.swift */; };
+		F7DB67C32C97FCA7009CE50C /* AlfalfaYieldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67C22C97FCA7009CE50C /* AlfalfaYieldApp.swift */; };
+		F7DB67C52C97FCA7009CE50C /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67C42C97FCA7009CE50C /* loginView.swift */; };
+		F7DB67C72C97FCA7009CE50C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67C62C97FCA7009CE50C /* Item.swift */; };
+		F7DB67C92C97FCA8009CE50C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DB67C82C97FCA8009CE50C /* Assets.xcassets */; };
+		F7DB67CC2C97FCA8009CE50C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DB67CB2C97FCA8009CE50C /* Preview Assets.xcassets */; };
+		F7DB67D82C97FCA8009CE50C /* AlfalfaYieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67D72C97FCA8009CE50C /* AlfalfaYieldTests.swift */; };
+		F7DB67E22C97FCA8009CE50C /* AlfalfaYieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67E12C97FCA8009CE50C /* AlfalfaYieldUITests.swift */; };
+		F7DB67E42C97FCA8009CE50C /* AlfalfaYieldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67E32C97FCA8009CE50C /* AlfalfaYieldUITestsLaunchTests.swift */; };
+		F7DB67F12C980946009CE50C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67F02C980946009CE50C /* SignUpView.swift */; };
+		F7DB67F32C980DBB009CE50C /* Dashboardview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67F22C980DBB009CE50C /* Dashboardview.swift */; };
+		F7DB67F52C98174A009CE50C /* Fileuploadview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67F42C98174A009CE50C /* Fileuploadview.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7DB67D42C97FCA8009CE50C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7DB67B72C97FCA7009CE50C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7DB67BE2C97FCA7009CE50C;
+			remoteInfo = AlfalfaYield;
+		};
+		F7DB67DE2C97FCA8009CE50C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7DB67B72C97FCA7009CE50C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7DB67BE2C97FCA7009CE50C;
+			remoteInfo = AlfalfaYield;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F71D36912CA3E10100CA9438 /* trainmodelview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trainmodelview.swift; sourceTree = "<group>"; };
+		F71D36932CA3E13F00CA9438 /* viewresultsview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewresultsview.swift; sourceTree = "<group>"; };
+		F71D36952CA3EA3600CA9438 /* pklfileuploadscreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pklfileuploadscreen.swift; sourceTree = "<group>"; };
+		F72F4F502C9D28CB006B7525 /* customFileUploadViewnew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customFileUploadViewnew.swift; sourceTree = "<group>"; };
+		F72F4F522C9D29DD006B7525 /* customFilePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customFilePickerView.swift; sourceTree = "<group>"; };
+		F7A83BBA2C9D56AF0023443E /* swiftUIview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIview.swift; sourceTree = "<group>"; };
+		F7DB67BF2C97FCA7009CE50C /* AlfalfaYield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlfalfaYield.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7DB67C22C97FCA7009CE50C /* AlfalfaYieldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfalfaYieldApp.swift; sourceTree = "<group>"; };
+		F7DB67C42C97FCA7009CE50C /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
+		F7DB67C62C97FCA7009CE50C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F7DB67C82C97FCA8009CE50C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7DB67CB2C97FCA8009CE50C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7DB67CD2C97FCA8009CE50C /* AlfalfaYield.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlfalfaYield.entitlements; sourceTree = "<group>"; };
+		F7DB67CE2C97FCA8009CE50C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7DB67D32C97FCA8009CE50C /* AlfalfaYieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlfalfaYieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7DB67D72C97FCA8009CE50C /* AlfalfaYieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfalfaYieldTests.swift; sourceTree = "<group>"; };
+		F7DB67DD2C97FCA8009CE50C /* AlfalfaYieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlfalfaYieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7DB67E12C97FCA8009CE50C /* AlfalfaYieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfalfaYieldUITests.swift; sourceTree = "<group>"; };
+		F7DB67E32C97FCA8009CE50C /* AlfalfaYieldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfalfaYieldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F7DB67F02C980946009CE50C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		F7DB67F22C980DBB009CE50C /* Dashboardview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboardview.swift; sourceTree = "<group>"; };
+		F7DB67F42C98174A009CE50C /* Fileuploadview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fileuploadview.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7DB67BC2C97FCA7009CE50C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DB67D02C97FCA8009CE50C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DB67DA2C97FCA8009CE50C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7DB67B62C97FCA7009CE50C = {
+			isa = PBXGroup;
+			children = (
+				F71D36952CA3EA3600CA9438 /* pklfileuploadscreen.swift */,
+				F71D36932CA3E13F00CA9438 /* viewresultsview.swift */,
+				F71D36912CA3E10100CA9438 /* trainmodelview.swift */,
+				F72F4F522C9D29DD006B7525 /* customFilePickerView.swift */,
+				F72F4F502C9D28CB006B7525 /* customFileUploadViewnew.swift */,
+				F7A83BBA2C9D56AF0023443E /* swiftUIview.swift */,
+				F7DB67C12C97FCA7009CE50C /* AlfalfaYield */,
+				F7DB67D62C97FCA8009CE50C /* AlfalfaYieldTests */,
+				F7DB67E02C97FCA8009CE50C /* AlfalfaYieldUITests */,
+				F7DB67C02C97FCA7009CE50C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7DB67C02C97FCA7009CE50C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7DB67BF2C97FCA7009CE50C /* AlfalfaYield.app */,
+				F7DB67D32C97FCA8009CE50C /* AlfalfaYieldTests.xctest */,
+				F7DB67DD2C97FCA8009CE50C /* AlfalfaYieldUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7DB67C12C97FCA7009CE50C /* AlfalfaYield */ = {
+			isa = PBXGroup;
+			children = (
+				F7DB67C22C97FCA7009CE50C /* AlfalfaYieldApp.swift */,
+				F7DB67C42C97FCA7009CE50C /* loginView.swift */,
+				F7DB67C62C97FCA7009CE50C /* Item.swift */,
+				F7DB67C82C97FCA8009CE50C /* Assets.xcassets */,
+				F7DB67CD2C97FCA8009CE50C /* AlfalfaYield.entitlements */,
+				F7DB67CE2C97FCA8009CE50C /* Info.plist */,
+				F7DB67CA2C97FCA8009CE50C /* Preview Content */,
+				F7DB67F02C980946009CE50C /* SignUpView.swift */,
+				F7DB67F22C980DBB009CE50C /* Dashboardview.swift */,
+				F7DB67F42C98174A009CE50C /* Fileuploadview.swift */,
+			);
+			path = AlfalfaYield;
+			sourceTree = "<group>";
+		};
+		F7DB67CA2C97FCA8009CE50C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F7DB67CB2C97FCA8009CE50C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F7DB67D62C97FCA8009CE50C /* AlfalfaYieldTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7DB67D72C97FCA8009CE50C /* AlfalfaYieldTests.swift */,
+			);
+			path = AlfalfaYieldTests;
+			sourceTree = "<group>";
+		};
+		F7DB67E02C97FCA8009CE50C /* AlfalfaYieldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F7DB67E12C97FCA8009CE50C /* AlfalfaYieldUITests.swift */,
+				F7DB67E32C97FCA8009CE50C /* AlfalfaYieldUITestsLaunchTests.swift */,
+			);
+			path = AlfalfaYieldUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7DB67BE2C97FCA7009CE50C /* AlfalfaYield */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7DB67E72C97FCA8009CE50C /* Build configuration list for PBXNativeTarget "AlfalfaYield" */;
+			buildPhases = (
+				F7DB67BB2C97FCA7009CE50C /* Sources */,
+				F7DB67BC2C97FCA7009CE50C /* Frameworks */,
+				F7DB67BD2C97FCA7009CE50C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlfalfaYield;
+			productName = AlfalfaYield;
+			productReference = F7DB67BF2C97FCA7009CE50C /* AlfalfaYield.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7DB67D22C97FCA8009CE50C /* AlfalfaYieldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7DB67EA2C97FCA8009CE50C /* Build configuration list for PBXNativeTarget "AlfalfaYieldTests" */;
+			buildPhases = (
+				F7DB67CF2C97FCA8009CE50C /* Sources */,
+				F7DB67D02C97FCA8009CE50C /* Frameworks */,
+				F7DB67D12C97FCA8009CE50C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7DB67D52C97FCA8009CE50C /* PBXTargetDependency */,
+			);
+			name = AlfalfaYieldTests;
+			productName = AlfalfaYieldTests;
+			productReference = F7DB67D32C97FCA8009CE50C /* AlfalfaYieldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F7DB67DC2C97FCA8009CE50C /* AlfalfaYieldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7DB67ED2C97FCA8009CE50C /* Build configuration list for PBXNativeTarget "AlfalfaYieldUITests" */;
+			buildPhases = (
+				F7DB67D92C97FCA8009CE50C /* Sources */,
+				F7DB67DA2C97FCA8009CE50C /* Frameworks */,
+				F7DB67DB2C97FCA8009CE50C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7DB67DF2C97FCA8009CE50C /* PBXTargetDependency */,
+			);
+			name = AlfalfaYieldUITests;
+			productName = AlfalfaYieldUITests;
+			productReference = F7DB67DD2C97FCA8009CE50C /* AlfalfaYieldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7DB67B72C97FCA7009CE50C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F7DB67BE2C97FCA7009CE50C = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					F7DB67D22C97FCA8009CE50C = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = F7DB67BE2C97FCA7009CE50C;
+					};
+					F7DB67DC2C97FCA8009CE50C = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = F7DB67BE2C97FCA7009CE50C;
+					};
+				};
+			};
+			buildConfigurationList = F7DB67BA2C97FCA7009CE50C /* Build configuration list for PBXProject "AlfalfaYield" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7DB67B62C97FCA7009CE50C;
+			packageReferences = (
+				F71D36972CA40CBF00CA9438 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
+			productRefGroup = F7DB67C02C97FCA7009CE50C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7DB67BE2C97FCA7009CE50C /* AlfalfaYield */,
+				F7DB67D22C97FCA8009CE50C /* AlfalfaYieldTests */,
+				F7DB67DC2C97FCA8009CE50C /* AlfalfaYieldUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7DB67BD2C97FCA7009CE50C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7DB67CC2C97FCA8009CE50C /* Preview Assets.xcassets in Resources */,
+				F7DB67C92C97FCA8009CE50C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DB67D12C97FCA8009CE50C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DB67DB2C97FCA8009CE50C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7DB67BB2C97FCA7009CE50C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F71D36962CA3EA3600CA9438 /* pklfileuploadscreen.swift in Sources */,
+				F72F4F532C9D29DD006B7525 /* customFilePickerView.swift in Sources */,
+				F7DB67F32C980DBB009CE50C /* Dashboardview.swift in Sources */,
+				F71D36942CA3E13F00CA9438 /* viewresultsview.swift in Sources */,
+				F7DB67F52C98174A009CE50C /* Fileuploadview.swift in Sources */,
+				F71D36922CA3E10100CA9438 /* trainmodelview.swift in Sources */,
+				F7DB67F12C980946009CE50C /* SignUpView.swift in Sources */,
+				F7DB67C52C97FCA7009CE50C /* loginView.swift in Sources */,
+				F7DB67C72C97FCA7009CE50C /* Item.swift in Sources */,
+				F72F4F512C9D28CB006B7525 /* customFileUploadViewnew.swift in Sources */,
+				F7A83BBB2C9D56AF0023443E /* swiftUIview.swift in Sources */,
+				F7DB67C32C97FCA7009CE50C /* AlfalfaYieldApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DB67CF2C97FCA8009CE50C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7DB67D82C97FCA8009CE50C /* AlfalfaYieldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DB67D92C97FCA8009CE50C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7DB67E42C97FCA8009CE50C /* AlfalfaYieldUITestsLaunchTests.swift in Sources */,
+				F7DB67E22C97FCA8009CE50C /* AlfalfaYieldUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7DB67D52C97FCA8009CE50C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7DB67BE2C97FCA7009CE50C /* AlfalfaYield */;
+			targetProxy = F7DB67D42C97FCA8009CE50C /* PBXContainerItemProxy */;
+		};
+		F7DB67DF2C97FCA8009CE50C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7DB67BE2C97FCA7009CE50C /* AlfalfaYield */;
+			targetProxy = F7DB67DE2C97FCA8009CE50C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F7DB67E52C97FCA8009CE50C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7DB67E62C97FCA8009CE50C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7DB67E82C97FCA8009CE50C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AlfalfaYield/AlfalfaYield.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AlfalfaYield/Preview Content\"";
+				DEVELOPMENT_TEAM = ZPN3Q2Q427;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AlfalfaYield/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jagadishkumar2702.AlfalfaYield;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7DB67E92C97FCA8009CE50C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AlfalfaYield/AlfalfaYield.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AlfalfaYield/Preview Content\"";
+				DEVELOPMENT_TEAM = ZPN3Q2Q427;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AlfalfaYield/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jagadishkumar2702.AlfalfaYield;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F7DB67EB2C97FCA8009CE50C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZPN3Q2Q427;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jagadishkumar2702.AlfalfaYieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlfalfaYield.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AlfalfaYield";
+			};
+			name = Debug;
+		};
+		F7DB67EC2C97FCA8009CE50C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZPN3Q2Q427;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jagadishkumar2702.AlfalfaYieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlfalfaYield.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AlfalfaYield";
+			};
+			name = Release;
+		};
+		F7DB67EE2C97FCA8009CE50C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZPN3Q2Q427;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jagadishkumar2702.AlfalfaYieldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlfalfaYield;
+			};
+			name = Debug;
+		};
+		F7DB67EF2C97FCA8009CE50C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZPN3Q2Q427;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jagadishkumar2702.AlfalfaYieldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlfalfaYield;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7DB67BA2C97FCA7009CE50C /* Build configuration list for PBXProject "AlfalfaYield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DB67E52C97FCA8009CE50C /* Debug */,
+				F7DB67E62C97FCA8009CE50C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7DB67E72C97FCA8009CE50C /* Build configuration list for PBXNativeTarget "AlfalfaYield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DB67E82C97FCA8009CE50C /* Debug */,
+				F7DB67E92C97FCA8009CE50C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7DB67EA2C97FCA8009CE50C /* Build configuration list for PBXNativeTarget "AlfalfaYieldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DB67EB2C97FCA8009CE50C /* Debug */,
+				F7DB67EC2C97FCA8009CE50C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7DB67ED2C97FCA8009CE50C /* Build configuration list for PBXNativeTarget "AlfalfaYieldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DB67EE2C97FCA8009CE50C /* Debug */,
+				F7DB67EF2C97FCA8009CE50C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F71D36972CA40CBF00CA9438 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = F7DB67B72C97FCA7009CE50C /* Project object */;
+}
