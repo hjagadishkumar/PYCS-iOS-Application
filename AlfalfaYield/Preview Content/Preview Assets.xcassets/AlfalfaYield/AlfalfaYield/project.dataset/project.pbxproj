@@ -7,14 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F71D36922CA3E10100CA9438 /* trainmodelview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71D36912CA3E10100CA9438 /* trainmodelview.swift */; };
-		F71D36942CA3E13F00CA9438 /* viewresultsview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71D36932CA3E13F00CA9438 /* viewresultsview.swift */; };
-		F71D36962CA3EA3600CA9438 /* pklfileuploadscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71D36952CA3EA3600CA9438 /* pklfileuploadscreen.swift */; };
-		F72F4F512C9D28CB006B7525 /* customFileUploadViewnew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F4F502C9D28CB006B7525 /* customFileUploadViewnew.swift */; };
-		F72F4F532C9D29DD006B7525 /* customFilePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F4F522C9D29DD006B7525 /* customFilePickerView.swift */; };
-		F7A83BBB2C9D56AF0023443E /* swiftUIview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A83BBA2C9D56AF0023443E /* swiftUIview.swift */; };
 		F7DB67C32C97FCA7009CE50C /* AlfalfaYieldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67C22C97FCA7009CE50C /* AlfalfaYieldApp.swift */; };
-		F7DB67C52C97FCA7009CE50C /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67C42C97FCA7009CE50C /* loginView.swift */; };
+		F7DB67C52C97FCA7009CE50C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67C42C97FCA7009CE50C /* ContentView.swift */; };
 		F7DB67C72C97FCA7009CE50C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67C62C97FCA7009CE50C /* Item.swift */; };
 		F7DB67C92C97FCA8009CE50C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DB67C82C97FCA8009CE50C /* Assets.xcassets */; };
 		F7DB67CC2C97FCA8009CE50C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DB67CB2C97FCA8009CE50C /* Preview Assets.xcassets */; };
@@ -44,15 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F71D36912CA3E10100CA9438 /* trainmodelview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trainmodelview.swift; sourceTree = "<group>"; };
-		F71D36932CA3E13F00CA9438 /* viewresultsview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewresultsview.swift; sourceTree = "<group>"; };
-		F71D36952CA3EA3600CA9438 /* pklfileuploadscreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pklfileuploadscreen.swift; sourceTree = "<group>"; };
-		F72F4F502C9D28CB006B7525 /* customFileUploadViewnew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customFileUploadViewnew.swift; sourceTree = "<group>"; };
-		F72F4F522C9D29DD006B7525 /* customFilePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customFilePickerView.swift; sourceTree = "<group>"; };
-		F7A83BBA2C9D56AF0023443E /* swiftUIview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIview.swift; sourceTree = "<group>"; };
 		F7DB67BF2C97FCA7009CE50C /* AlfalfaYield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlfalfaYield.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DB67C22C97FCA7009CE50C /* AlfalfaYieldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfalfaYieldApp.swift; sourceTree = "<group>"; };
-		F7DB67C42C97FCA7009CE50C /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
+		F7DB67C42C97FCA7009CE50C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F7DB67C62C97FCA7009CE50C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F7DB67C82C97FCA8009CE50C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7DB67CB2C97FCA8009CE50C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -96,12 +84,6 @@
 		F7DB67B62C97FCA7009CE50C = {
 			isa = PBXGroup;
 			children = (
-				F71D36952CA3EA3600CA9438 /* pklfileuploadscreen.swift */,
-				F71D36932CA3E13F00CA9438 /* viewresultsview.swift */,
-				F71D36912CA3E10100CA9438 /* trainmodelview.swift */,
-				F72F4F522C9D29DD006B7525 /* customFilePickerView.swift */,
-				F72F4F502C9D28CB006B7525 /* customFileUploadViewnew.swift */,
-				F7A83BBA2C9D56AF0023443E /* swiftUIview.swift */,
 				F7DB67C12C97FCA7009CE50C /* AlfalfaYield */,
 				F7DB67D62C97FCA8009CE50C /* AlfalfaYieldTests */,
 				F7DB67E02C97FCA8009CE50C /* AlfalfaYieldUITests */,
@@ -123,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				F7DB67C22C97FCA7009CE50C /* AlfalfaYieldApp.swift */,
-				F7DB67C42C97FCA7009CE50C /* loginView.swift */,
+				F7DB67C42C97FCA7009CE50C /* ContentView.swift */,
 				F7DB67C62C97FCA7009CE50C /* Item.swift */,
 				F7DB67C82C97FCA8009CE50C /* Assets.xcassets */,
 				F7DB67CD2C97FCA8009CE50C /* AlfalfaYield.entitlements */,
@@ -249,9 +231,6 @@
 				Base,
 			);
 			mainGroup = F7DB67B62C97FCA7009CE50C;
-			packageReferences = (
-				F71D36972CA40CBF00CA9438 /* XCRemoteSwiftPackageReference "Charts" */,
-			);
 			productRefGroup = F7DB67C02C97FCA7009CE50C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -294,17 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F71D36962CA3EA3600CA9438 /* pklfileuploadscreen.swift in Sources */,
-				F72F4F532C9D29DD006B7525 /* customFilePickerView.swift in Sources */,
 				F7DB67F32C980DBB009CE50C /* Dashboardview.swift in Sources */,
-				F71D36942CA3E13F00CA9438 /* viewresultsview.swift in Sources */,
 				F7DB67F52C98174A009CE50C /* Fileuploadview.swift in Sources */,
-				F71D36922CA3E10100CA9438 /* trainmodelview.swift in Sources */,
 				F7DB67F12C980946009CE50C /* SignUpView.swift in Sources */,
-				F7DB67C52C97FCA7009CE50C /* loginView.swift in Sources */,
+				F7DB67C52C97FCA7009CE50C /* ContentView.swift in Sources */,
 				F7DB67C72C97FCA7009CE50C /* Item.swift in Sources */,
-				F72F4F512C9D28CB006B7525 /* customFileUploadViewnew.swift in Sources */,
-				F7A83BBB2C9D56AF0023443E /* swiftUIview.swift in Sources */,
 				F7DB67C32C97FCA7009CE50C /* AlfalfaYieldApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -639,17 +612,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		F71D36972CA40CBF00CA9438 /* XCRemoteSwiftPackageReference "Charts" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/danielgindi/Charts";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.1.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = F7DB67B72C97FCA7009CE50C /* Project object */;
 }

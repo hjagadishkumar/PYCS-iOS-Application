@@ -1,32 +1,10 @@
-//
-//  AlfalfaYieldApp.swift
-//  AlfalfaYield
-//
-//  Created by Anusha Challa on 9/16/24.
-//
-
 import SwiftUI
-import SwiftData
 
-@main
+@main  // This tells SwiftUI that this is the app entry point
 struct AlfalfaYieldApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
-
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginPageView()  // Your starting view, set to LoginPageView
         }
-        .modelContainer(sharedModelContainer)
     }
 }
