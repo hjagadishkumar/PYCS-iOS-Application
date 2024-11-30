@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F71D36922CA3E10100CA9438 /* trainmodelview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71D36912CA3E10100CA9438 /* trainmodelview.swift */; };
-		F71D36942CA3E13F00CA9438 /* viewresultsview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71D36932CA3E13F00CA9438 /* viewresultsview.swift */; };
-		F71D36962CA3EA3600CA9438 /* pklfileuploadscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71D36952CA3EA3600CA9438 /* pklfileuploadscreen.swift */; };
-		F72F4F512C9D28CB006B7525 /* customFileUploadViewnew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F4F502C9D28CB006B7525 /* customFileUploadViewnew.swift */; };
-		F72F4F532C9D29DD006B7525 /* customFilePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F4F522C9D29DD006B7525 /* customFilePickerView.swift */; };
 		F7A83BBB2C9D56AF0023443E /* swiftUIview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A83BBA2C9D56AF0023443E /* swiftUIview.swift */; };
+		F7B7FB642CCB813A00932783 /* customtrainmodelview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7FB632CCB813A00932783 /* customtrainmodelview.swift */; };
+		F7B7FB662CCB81A600932783 /* customviewresultsview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7FB652CCB81A600932783 /* customviewresultsview.swift */; };
+		F7B7FB682CCB93D600932783 /* consolidatedfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7FB672CCB93D600932783 /* consolidatedfile.swift */; };
 		F7DB67C32C97FCA7009CE50C /* AlfalfaYieldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67C22C97FCA7009CE50C /* AlfalfaYieldApp.swift */; };
 		F7DB67C52C97FCA7009CE50C /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67C42C97FCA7009CE50C /* loginView.swift */; };
 		F7DB67C72C97FCA7009CE50C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67C62C97FCA7009CE50C /* Item.swift */; };
@@ -23,7 +21,6 @@
 		F7DB67E42C97FCA8009CE50C /* AlfalfaYieldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67E32C97FCA8009CE50C /* AlfalfaYieldUITestsLaunchTests.swift */; };
 		F7DB67F12C980946009CE50C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67F02C980946009CE50C /* SignUpView.swift */; };
 		F7DB67F32C980DBB009CE50C /* Dashboardview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67F22C980DBB009CE50C /* Dashboardview.swift */; };
-		F7DB67F52C98174A009CE50C /* Fileuploadview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB67F42C98174A009CE50C /* Fileuploadview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,12 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F71D36912CA3E10100CA9438 /* trainmodelview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trainmodelview.swift; sourceTree = "<group>"; };
-		F71D36932CA3E13F00CA9438 /* viewresultsview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewresultsview.swift; sourceTree = "<group>"; };
-		F71D36952CA3EA3600CA9438 /* pklfileuploadscreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pklfileuploadscreen.swift; sourceTree = "<group>"; };
-		F72F4F502C9D28CB006B7525 /* customFileUploadViewnew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customFileUploadViewnew.swift; sourceTree = "<group>"; };
-		F72F4F522C9D29DD006B7525 /* customFilePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customFilePickerView.swift; sourceTree = "<group>"; };
 		F7A83BBA2C9D56AF0023443E /* swiftUIview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIview.swift; sourceTree = "<group>"; };
+		F7B7FB632CCB813A00932783 /* customtrainmodelview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customtrainmodelview.swift; sourceTree = "<group>"; };
+		F7B7FB652CCB81A600932783 /* customviewresultsview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customviewresultsview.swift; sourceTree = "<group>"; };
+		F7B7FB672CCB93D600932783 /* consolidatedfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = consolidatedfile.swift; sourceTree = "<group>"; };
 		F7DB67BF2C97FCA7009CE50C /* AlfalfaYield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlfalfaYield.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DB67C22C97FCA7009CE50C /* AlfalfaYieldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfalfaYieldApp.swift; sourceTree = "<group>"; };
 		F7DB67C42C97FCA7009CE50C /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
@@ -65,7 +60,6 @@
 		F7DB67E32C97FCA8009CE50C /* AlfalfaYieldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlfalfaYieldUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F7DB67F02C980946009CE50C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		F7DB67F22C980DBB009CE50C /* Dashboardview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboardview.swift; sourceTree = "<group>"; };
-		F7DB67F42C98174A009CE50C /* Fileuploadview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fileuploadview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +90,9 @@
 		F7DB67B62C97FCA7009CE50C = {
 			isa = PBXGroup;
 			children = (
-				F71D36952CA3EA3600CA9438 /* pklfileuploadscreen.swift */,
-				F71D36932CA3E13F00CA9438 /* viewresultsview.swift */,
-				F71D36912CA3E10100CA9438 /* trainmodelview.swift */,
-				F72F4F522C9D29DD006B7525 /* customFilePickerView.swift */,
-				F72F4F502C9D28CB006B7525 /* customFileUploadViewnew.swift */,
+				F7B7FB672CCB93D600932783 /* consolidatedfile.swift */,
+				F7B7FB652CCB81A600932783 /* customviewresultsview.swift */,
+				F7B7FB632CCB813A00932783 /* customtrainmodelview.swift */,
 				F7A83BBA2C9D56AF0023443E /* swiftUIview.swift */,
 				F7DB67C12C97FCA7009CE50C /* AlfalfaYield */,
 				F7DB67D62C97FCA8009CE50C /* AlfalfaYieldTests */,
@@ -131,7 +123,6 @@
 				F7DB67CA2C97FCA8009CE50C /* Preview Content */,
 				F7DB67F02C980946009CE50C /* SignUpView.swift */,
 				F7DB67F22C980DBB009CE50C /* Dashboardview.swift */,
-				F7DB67F42C98174A009CE50C /* Fileuploadview.swift */,
 			);
 			path = AlfalfaYield;
 			sourceTree = "<group>";
@@ -294,17 +285,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F71D36962CA3EA3600CA9438 /* pklfileuploadscreen.swift in Sources */,
-				F72F4F532C9D29DD006B7525 /* customFilePickerView.swift in Sources */,
 				F7DB67F32C980DBB009CE50C /* Dashboardview.swift in Sources */,
-				F71D36942CA3E13F00CA9438 /* viewresultsview.swift in Sources */,
-				F7DB67F52C98174A009CE50C /* Fileuploadview.swift in Sources */,
-				F71D36922CA3E10100CA9438 /* trainmodelview.swift in Sources */,
 				F7DB67F12C980946009CE50C /* SignUpView.swift in Sources */,
 				F7DB67C52C97FCA7009CE50C /* loginView.swift in Sources */,
+				F7B7FB662CCB81A600932783 /* customviewresultsview.swift in Sources */,
+				F7B7FB642CCB813A00932783 /* customtrainmodelview.swift in Sources */,
 				F7DB67C72C97FCA7009CE50C /* Item.swift in Sources */,
-				F72F4F512C9D28CB006B7525 /* customFileUploadViewnew.swift in Sources */,
 				F7A83BBB2C9D56AF0023443E /* swiftUIview.swift in Sources */,
+				F7B7FB682CCB93D600932783 /* consolidatedfile.swift in Sources */,
 				F7DB67C32C97FCA7009CE50C /* AlfalfaYieldApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

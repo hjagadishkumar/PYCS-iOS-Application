@@ -18,6 +18,10 @@ struct CustomFileUploadScreenV2: View {
 
     @State private var isLoading = false
     @State private var responseMessage = ""
+    @State private var yields: [Double] = []
+    @State private var adjustedPredictions: [Double] = []
+    @State private var timestamps: [Int] = []
+    @State private var showResultsScreen = false
 
     var body: some View {
         NavigationView {
@@ -35,9 +39,7 @@ struct CustomFileUploadScreenV2: View {
                 CustomFileUploadButtonV2(fileURL: $targetYearFileURL, showPicker: $showTargetYearFilePicker, title: "Upload Target Year File")
 
                 // Process Files Button
-                Button(action: {
-                    processFiles() // Handle the file processing
-                }) {
+                Button(action: { processFiles() }) {
                     HStack {
                         Image(systemName: "tray.and.arrow.up.fill")
                             .foregroundColor(.white)
@@ -53,8 +55,11 @@ struct CustomFileUploadScreenV2: View {
                 }
                 .padding(.horizontal, 30)
                 .disabled(isLoading)
+                .fullScreenCover(isPresented: $showResultsScreen) {
+                    CustomViewResultsView(yields: yields, adjustedPredictions: adjustedPredictions, timestamps: timestamps)
+                }
 
-                // Show a loading spinner if uploading
+                // Show loading spinner if uploading
                 if isLoading {
                     ProgressView("Uploading...")
                         .progressViewStyle(CircularProgressViewStyle(tint: .blue))
@@ -69,7 +74,7 @@ struct CustomFileUploadScreenV2: View {
             }
             .navigationBarTitle("Upload Data", displayMode: .inline)
             .navigationBarItems(leading: Button(action: {
-                presentationMode.wrappedValue.dismiss() // Navigate back
+                presentationMode.wrappedValue.dismiss()
             }) {
                 HStack {
                     Image(systemName: "chevron.left")
@@ -85,20 +90,21 @@ struct CustomFileUploadScreenV2: View {
         }
     }
 
-    // Function to process and upload the files
+    // Updated processFiles function to handle multiple file uploads
     private func processFiles() {
-        // Ensure at least one file is selected
-        guard let targetFileURL = targetFileURL else {
-            responseMessage = "Please select at least the Target File."
+        guard let targetFileURL = targetFileURL,
+              let boostFileURL = boostFileURL,
+              let allYearsFileURL = allYearsFileURL,
+              let finalYearFileURL = finalYearFileURL,
+              let targetYearFileURL = targetYearFileURL else {
+            responseMessage = "Please select all required files."
             return
         }
 
         isLoading = true
         responseMessage = ""
 
-        // Replace this URL with your backend's URL
-        let requestURL = URL(string: "http://127.0.0.1:5000/upload")!
-
+        let requestURL = URL(string: "http://172.20.208.90:5000/upload")!
         var request = URLRequest(url: requestURL)
         request.httpMethod = "POST"
         let boundary = UUID().uuidString
@@ -107,13 +113,12 @@ struct CustomFileUploadScreenV2: View {
         // Prepare the multipart form data
         var body = Data()
 
-        // Function to append a file to the form data
-        func appendFileData(url: URL?, fieldName: String) {
-            guard let fileURL = url else { return }
+        // Helper function to append file data
+        func appendFileData(url: URL, fieldName: String) {
             body.append("--\(boundary)\r\n".data(using: .utf8)!)
-            body.append("Content-Disposition: form-data; name=\"\(fieldName)\"; filename=\"\(fileURL.lastPathComponent)\"\r\n".data(using: .utf8)!)
+            body.append("Content-Disposition: form-data; name=\"\(fieldName)\"; filename=\"\(url.lastPathComponent)\"\r\n".data(using: .utf8)!)
             body.append("Content-Type: application/octet-stream\r\n\r\n".data(using: .utf8)!)
-            if let fileData = try? Data(contentsOf: fileURL) {
+            if let fileData = try? Data(contentsOf: url) {
                 body.append(fileData)
             }
             body.append("\r\n".data(using: .utf8)!)
@@ -138,8 +143,27 @@ struct CustomFileUploadScreenV2: View {
                     responseMessage = "Upload failed: \(error.localizedDescription)"
                 } else if let httpResponse = response as? HTTPURLResponse, !(200...299).contains(httpResponse.statusCode) {
                     responseMessage = "Server error: Received HTTP status code \(httpResponse.statusCode)"
-                } else if let data = data, let responseString = String(data: data, encoding: .utf8) {
-                    responseMessage = "Server Response: \(responseString)"
+                } else if let data = data {
+                    // Parse JSON response data if available
+                    do {
+                        if let jsonResponse = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
+                           let yieldsArray = jsonResponse["all_years_data"] as? [[String: Any]],
+                           let adjustedPredictionsArray = jsonResponse["adjusted_predictions"] as? [Double],
+                           let timestampsArray = jsonResponse["prediction_timestamps"] as? [Int] {
+
+                            // Extract yields data
+                            self.yields = yieldsArray.compactMap { $0["yield"] as? Double }
+                            self.adjustedPredictions = adjustedPredictionsArray
+                            self.timestamps = timestampsArray
+
+                            responseMessage = "Files processed successfully!"
+                            showResultsScreen = true  // Navigate to results screen
+                        } else {
+                            responseMessage = "Unexpected response format."
+                        }
+                    } catch {
+                        responseMessage = "Error parsing server response."
+                    }
                 } else {
                     responseMessage = "Unexpected response from server."
                 }
@@ -148,17 +172,15 @@ struct CustomFileUploadScreenV2: View {
     }
 }
 
-// Reusable file upload button with renamed struct
+// Custom file upload button that triggers a file picker
 struct CustomFileUploadButtonV2: View {
-    @Binding var fileURL: URL?
-    @Binding var showPicker: Bool
-    var title: String
+    @Binding var fileURL: URL?  // Stores the selected file URL
+    @Binding var showPicker: Bool  // Controls the display of the file picker
+    var title: String  // Title of the upload button
 
     var body: some View {
         VStack(alignment: .leading) {
-            Button(action: {
-                showPicker = true  // Show the file picker
-            }) {
+            Button(action: { showPicker = true }) {
                 HStack {
                     Text(fileURL?.lastPathComponent ?? title)
                         .foregroundColor(.gray)
@@ -175,14 +197,14 @@ struct CustomFileUploadButtonV2: View {
                 )
             }
             .sheet(isPresented: $showPicker) {
-                CustomFilePickerViewV2(selectedFileURL: $fileURL)  // Renamed picker view
+                CustomFilePickerViewV2(selectedFileURL: $fileURL)
             }
         }
         .padding(.horizontal, 30)
     }
 }
 
-// File picker using UIKit's UIDocumentPickerViewController with renamed struct
+// Custom file picker using UIDocumentPickerViewController
 struct CustomFilePickerViewV2: UIViewControllerRepresentable {
     @Binding var selectedFileURL: URL?
 
@@ -199,9 +221,7 @@ struct CustomFilePickerViewV2: UIViewControllerRepresentable {
             }
         }
 
-        func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
-            // Handle cancellation if needed
-        }
+        func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {}
     }
 
     func makeCoordinator() -> Coordinator {
@@ -215,12 +235,6 @@ struct CustomFilePickerViewV2: UIViewControllerRepresentable {
     }
 
     func updateUIViewController(_ uiViewController: UIDocumentPickerViewController, context: Context) {
-        // No update required
-    }
-}
-
-struct CustomFileUploadScreenV2_Previews: PreviewProvider {
-    static var previews: some View {
-        CustomFileUploadScreenV2()
+        // No updates needed
     }
 }

@@ -39,7 +39,7 @@ struct LoginPageView: View {
                         .foregroundColor(.green)
                         .padding(.top, 10)
                     
-                    Text("(Predict Your Crops) ")
+                    Text("(Predict Your CropS) ")
                         .font(.title2)
                         .fontWeight(.bold)
                         .foregroundColor(.green)
